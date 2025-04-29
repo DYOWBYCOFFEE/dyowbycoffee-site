@@ -1,145 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DYOWBY</title>
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: 'Georgia', serif;
-      color: #3e2f1c;
-    }
-
     body {
-      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1200');
-      background-repeat: no-repeat;
-      background-position: center center;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
       background-size: cover;
-      background-attachment: scroll;
-      padding: 50px 20px;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    nav {
-      background-color: rgba(111, 78, 55, 0.9);
-      padding: 10px 0;
+    .container {
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 100px 20px;
+      position: relative;
+      z-index: 1;
     }
 
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: 30px auto;
-      border-radius: 10px;
-    }
-
-    h2 {
-      border-bottom: 2px solid #6f4e37;
-      padding-bottom: 5px;
-    }
-
-    .button-group {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
-    }
-
-    .shop-button {
-      background-color: #6f4e37;
-      color: white;
+    .button {
+      display: inline-block;
+      margin: 10px;
       padding: 15px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
       text-decoration: none;
-      min-width: 200px;
-      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
     }
 
-    .shop-button:hover {
-      background-color: #5c3b27;
+    .button:hover {
+      transform: scale(1.05);
     }
 
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
+    /* 絵文字アニメーション */
+    .emoji {
+      position: absolute;
+      font-size: 2rem;
+      opacity: 0.3;
+      z-index: 0;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      pointer-events: none;
+    }
+
+    .coffee {
+      top: 20%;
+      left: 10%;
+      animation-name: float1;
+    }
+
+    .bean {
+      top: 60%;
+      left: 80%;
+      animation-name: float2;
+    }
+
+    .plane {
+      top: 40%;
+      left: 50%;
+      animation-name: float3;
+    }
+
+    @keyframes float1 {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes float2 {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(15px); }
+      100% { transform: translateX(0); }
+    }
+
+    @keyframes float3 {
+      0% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-8px) translateX(8px); }
+      100% { transform: translateY(0) translateX(0); }
+    }
+
+    /* モバイル対応 */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
       }
-
-      .shop-button {
-        font-size: 16px;
-        padding: 12px 20px;
+      .button {
+        width: 80%;
+        padding: 12px;
       }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="#about">DYOWBYとは</a>
-    <a href="#whatwedo">何をしてるか</a>
-    <a href="#company">会社概要</a>
-  </nav>
+  <!-- 絵文字アニメーション -->
+  <div class="emoji coffee">☕</div>
+  <div class="emoji bean">🌱</div>
+  <div class="emoji plane">✈️</div>
 
-  <section id="about">
-   <h2>DYOWBYとは</h2>
-
-<p>コーヒーが好きで、旅も好き。<br>
-そんな自分が「何かを表現する場所がほしい」と思って始めたのがDYOWBYです。</p>
-
-<p>どこかの国のカフェで一息つくような、<br>
-忙しい毎日の中でも、ふと深呼吸できる時間。<br>
-そんな<strong>“心の旅”</strong>みたいな瞬間を、コーヒーを通して届けたい。</p>
-
-<p>5分でも10分でも、あなただけの落ち着ける時間になりますように。<br>
-それが、DYOWBYの願いです。</p>
-  </section>
-
-  <section id="whatwedo">
-    <h2>何をしてるか</h2>
-    <p>『コーヒーで世界旅行』をテーマにし、ShopifyやBASEを通じて各国のコーヒー豆をお届けしています。</p>
-
-    <div class="button-group">
-      <a href="https://20mi7i-em.myshopify.com" class="shop-button" target="_blank">
-        単品購入はこちら ☕
-      </a>
-      <a href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー定期便-brewby" class="shop-button" target="_blank">
-        定額プランを見る ✈️
-      </a>
-    </div>
-  </section>
-
-  <section id="company">
-    <h2>会社概要</h2>
-
-<p>
-運営：DYOWBY COFFEE<br>
-代表：森岡尚暉<br>
-所在地：東京都足立区新田2丁目<br>
-お問い合わせ：dyowby.coffee@gmail.com<br>
-事業内容：コーヒー豆のネット販売、コーヒー豆の定期便サービス
-</p>
-  </section>
+  <!-- メインコンテンツ -->
+  <div class="container">
+    <h1>DYOWBY</h1>
+    <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー">単品で購入する</a>
+    <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー定期便-brewby">定額プランをみる</a>
+  </div>
 
 </body>
 </html>
