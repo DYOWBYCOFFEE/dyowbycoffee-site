@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DYOWBY</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #3e2f1c;
+    }
+
+    body {
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1200');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: scroll;
+      padding: 50px 20px;
+    }
+
+    nav {
+      background-color: rgba(111, 78, 55, 0.9);
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 30px auto;
+      border-radius: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #6f4e37;
+      padding-bottom: 5px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .shop-button {
+      background-color: #6f4e37;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      min-width: 200px;
+      text-align: center;
+    }
+
+    .shop-button:hover {
+      background-color: #5c3b27;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .shop-button {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">DYOWBYとは</a>
+    <a href="#whatwedo">何をしてるか</a>
+    <a href="#company">会社概要</a>
+  </nav>
+
+  <section id="about">
+    <h2>DYOWBYとは</h2>
+    <p>“Do Your Own Way, Be Yourself”――自分らしく生きる人を応援するブランドです。</p>
+  </section>
+
+  <section id="whatwedo">
+    <h2>何をしてるか</h2>
+    <p>旅とコーヒーをテーマにしたアイテムやストーリーを、Shopifyを通じてお届けしています。</p>
+
+    <div class="button-group">
+      <a href="https://20mi7i-em.myshopify.com" class="shop-button" target="_blank">
+        単品購入はこちら ☕
+      </a>
+      <a href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー定期便-brewby" class="shop-button" target="_blank">
+        定額プランを見る ✈️
+      </a>
+    </div>
+  </section>
+
+  <section id="company">
+    <h2>会社概要</h2>
+    <p>所在地、代表者名、設立年、連絡先などをここに記載できます。</p>
+  </section>
+
+</body>
+</html>
