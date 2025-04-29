@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DYOWBY</title>
   <style>
     body {
@@ -21,7 +21,7 @@
 
     .container {
       text-align: center;
-      padding: 100px 20px;
+      padding: 100px 20px 40px;
       position: relative;
       z-index: 1;
     }
@@ -47,7 +47,27 @@
       transform: scale(1.05);
     }
 
-    /* 絵文字アニメーション */
+    section {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 800px;
+      border-radius: 10px;
+      z-index: 1;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+
     .emoji {
       position: absolute;
       font-size: 2rem;
@@ -95,7 +115,6 @@
       100% { transform: translateY(0) translateX(0); }
     }
 
-    /* モバイル対応 */
     @media screen and (max-width: 768px) {
       h1 {
         font-size: 2rem;
@@ -114,12 +133,37 @@
   <div class="emoji bean">🌱</div>
   <div class="emoji plane">✈️</div>
 
-  <!-- メインコンテンツ -->
+  <!-- メイン -->
   <div class="container">
     <h1>DYOWBY</h1>
     <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー">単品で購入する</a>
     <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー定期便-brewby">定額プランをみる</a>
   </div>
+
+  <!-- DYOWBYとは -->
+  <section>
+    <h2>DYOWBYとは</h2>
+    <p>
+コーヒーが好きで、旅行も好き。
+DYOWBYは、そんな私自身を表現する場所です。
+
+慌ただしい人生の中で、5分でも10分でも
+ほっと落ち着ける時間を届けたい。
+
+そんな思いから生まれたコーヒーと旅のブランドです。
+    </p>
+  </section>
+
+  <!-- 会社概要 -->
+  <section>
+    <h2>会社概要</h2>
+    <p>
+1. DYOWBY COFFEE　代表：森岡尚暉
+2. 東京都足立区新田2丁目
+3. dyowby.coffee@gmail.com
+4. コーヒー豆のネット販売とコーヒー豆の定期便
+    </p>
+  </section>
 
 </body>
 </html>
