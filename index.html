@@ -19,6 +19,29 @@
       overflow-x: hidden;
     }
 
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 0;
+    }
+
+    .nav-links a {
+      margin: 0 20px;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
     .container {
       text-align: center;
       padding: 100px 20px 40px;
@@ -115,30 +138,6 @@
       100% { transform: translateY(0) translateX(0); }
     }
 
-    .nav-links {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.2rem;
-      z-index: 1;
-    }
-
-    .nav-links a {
-      margin: 0 20px;
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 15px;
-      border-radius: 5px;
-    }
-
-    .nav-links a:hover {
-      background-color: rgba(255, 255, 255, 0.6);
-    }
-
     @media screen and (max-width: 768px) {
       h1 {
         font-size: 2rem;
@@ -147,40 +146,46 @@
         width: 80%;
         padding: 12px;
       }
+      .nav-links {
+        flex-direction: column;
+      }
+      .nav-links a {
+        margin: 5px 0;
+      }
     }
   </style>
 </head>
 <body>
-
-  <!-- ナビゲーションリンク -->
-  <div class="nav-links">
-    <a href="#dyowby">DYOWBYとは</a>
-    <a href="#company">会社概要</a>
-    <a href="#news">お知らせ</a>
-    <a href="#contact">お問い合わせ</a>
-  </div>
 
   <!-- 絵文字アニメーション -->
   <div class="emoji coffee">☕</div>
   <div class="emoji bean">🌱</div>
   <div class="emoji plane">✈️</div>
 
+  <!-- アンカーリンク -->
+  <nav class="nav-links">
+    <a href="#about">DYOWBYとは</a>
+    <a href="#company">会社概要</a>
+    <a href="#news">お知らせ</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
   <!-- メイン -->
   <div class="container">
-    <h1 id="dyowby">DYOWBY</h1>
+    <h1>DYOWBY</h1>
     <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー">単品で購入する</a>
     <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー定期便-brewby">定額プランをみる</a>
   </div>
 
   <!-- DYOWBYとは -->
-  <section id="dyowby">
+  <section id="about">
     <h2>DYOWBYとは</h2>
     <p>
-コーヒーが好きで、旅行も好き。<br>
-DYOWBYは、そんな自分自身を表現する場所です。<br><br>
+コーヒーが好きで、旅行も好き。
+DYOWBYは、そんな自分自身を表現する場所です。
 
-慌ただしい人生の中で、5分でも10分でも<br>
-ほっと落ち着ける時間を届けたい。<br><br>
+慌ただしい人生の中で、5分でも10分でも
+ほっと落ち着ける時間を届けたい。
 
 そんな思いから生まれたコーヒーと旅のブランドです。
     </p>
@@ -190,9 +195,9 @@ DYOWBYは、そんな自分自身を表現する場所です。<br><br>
   <section id="company">
     <h2>会社概要</h2>
     <p>
-1. DYOWBY COFFEE 代表：森岡尚暉<br>
-2. 東京都足立区新田2丁目<br>
-3. dyowby.coffee@gmail.com<br>
+1. DYOWBY COFFEE　代表：森岡尚暉  
+2. 東京都足立区新田2丁目  
+3. dyowby.coffee@gmail.com  
 4. 自家焙煎コーヒー豆のネット販売とコーヒー豆の定期便
     </p>
   </section>
@@ -200,16 +205,24 @@ DYOWBYは、そんな自分自身を表現する場所です。<br><br>
   <!-- お知らせ -->
   <section id="news">
     <h2>お知らせ</h2>
-    <p>近日中に新商品が登場予定です！お楽しみに。</p>
+    <p>
+2025年5月、新しい焙煎機を導入しました！  
+今後もさらにおいしいコーヒーをお届けできるよう頑張ります。
+    </p>
   </section>
 
   <!-- お問い合わせ -->
   <section id="contact">
     <h2>お問い合わせ</h2>
-    <p>お気軽にご連絡ください！</p>
-    <p>Email: dyowby.coffee@gmail.com</p>
+    <p>メールでのお問い合わせはこちらまでどうぞ：</p>
+    <p>
+      <a href="mailto:dyowby.coffee@gmail.com" style="color: #fff; text-decoration: underline;">
+        dyowby.coffee@gmail.com
+      </a>
+    </p>
   </section>
 
+  <!-- フッター -->
   <footer style="text-align: center; padding: 20px; color: #fff; background-color: rgba(0, 0, 0, 0.6);">
     <p>Follow us on  
       <a href="https://www.instagram.com/dyowby.coffee" target="_blank" style="color: #fff; text-decoration: underline;">
