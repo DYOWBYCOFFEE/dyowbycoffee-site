@@ -115,6 +115,27 @@
       100% { transform: translateY(0) translateX(0); }
     }
 
+    .nav-links {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.2rem;
+      z-index: 1;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
     @media screen and (max-width: 768px) {
       h1 {
         font-size: 2rem;
@@ -128,6 +149,14 @@
 </head>
 <body>
 
+  <!-- ナビゲーションリンク -->
+  <div class="nav-links">
+    <a href="#dyowby">DYOWBYとは</a>
+    <a href="#company">会社概要</a>
+    <a href="#news">お知らせ</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+
   <!-- 絵文字アニメーション -->
   <div class="emoji coffee">☕</div>
   <div class="emoji bean">🌱</div>
@@ -135,27 +164,13 @@
 
   <!-- メイン -->
   <div class="container">
-    <h1>DYOWBY</h1>
+    <h1 id="dyowby">DYOWBY</h1>
     <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー">単品で購入する</a>
     <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー定期便-brewby">定額プランをみる</a>
   </div>
 
-  <!-- 目次 -->
-  <div style="text-align: center; margin-top: 30px;">
-    <a href="#notice" class="button">お知らせ</a>
-    <a href="#about" class="button">DYOWBYとは</a>
-    <a href="#company" class="button">会社概要</a>
-    <a href="#contact" class="button">お問い合わせ</a>
-  </div>
-
-  <!-- お知らせ -->
-  <section id="notice">
-    <h2>お知らせ</h2>
-    <p>新しい商品が入荷しました！ 詳細はオンラインショップをご覧ください。</p>
-  </section>
-
   <!-- DYOWBYとは -->
-  <section id="about">
+  <section id="dyowby">
     <h2>DYOWBYとは</h2>
     <p>
 コーヒーが好きで、旅行も好き。<br>
@@ -172,28 +187,24 @@ DYOWBYは、そんな自分自身を表現する場所です。<br><br>
   <section id="company">
     <h2>会社概要</h2>
     <p>
-1. DYOWBY COFFEE　代表：森岡尚暉<br>
+1. DYOWBY COFFEE 代表：森岡尚暉<br>
 2. 東京都足立区新田2丁目<br>
 3. dyowby.coffee@gmail.com<br>
 4. 自家焙煎コーヒー豆のネット販売とコーヒー豆の定期便
     </p>
   </section>
 
+  <!-- お知らせ -->
+  <section id="news">
+    <h2>お知らせ</h2>
+    <p>近日中に新商品が登場予定です！お楽しみに。</p>
+  </section>
+
   <!-- お問い合わせ -->
   <section id="contact">
     <h2>お問い合わせ</h2>
-    <form action="https://formsubmit.co/dyowby.coffee@gmail.com" method="POST">
-      <label for="name">お名前:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="email">メールアドレス:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="message">メッセージ:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-      <button type="submit" class="button">送信</button>
-    </form>
+    <p>お気軽にご連絡ください！</p>
+    <p>Email: dyowby.coffee@gmail.com</p>
   </section>
 
   <footer style="text-align: center; padding: 20px; color: #fff; background-color: rgba(0, 0, 0, 0.6);">
@@ -203,5 +214,6 @@ DYOWBYは、そんな自分自身を表現する場所です。<br><br>
       </a>
     </p>
   </footer>
+
 </body>
 </html>
