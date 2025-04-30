@@ -19,26 +19,6 @@
       overflow-x: hidden;
     }
 
-    nav {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
     .container {
       text-align: center;
       padding: 100px 20px 40px;
@@ -143,21 +123,10 @@
         width: 80%;
         padding: 12px;
       }
-      nav a {
-        display: block;
-        margin: 8px 0;
-      }
     }
   </style>
 </head>
 <body>
-
-  <!-- ナビゲーション -->
-  <nav>
-    <a href="#about">DYOWBYとは</a>
-    <a href="#news">お知らせ</a>
-    <a href="#company">会社概要</a>
-  </nav>
 
   <!-- 絵文字アニメーション -->
   <div class="emoji coffee">☕</div>
@@ -175,23 +144,13 @@
   <section id="about">
     <h2>DYOWBYとは</h2>
     <p>
-コーヒーが好きで、旅行も好き。
-DYOWBYは、そんな自分自身を表現する場所です。
-
-慌ただしい人生の中で、5分でも10分でも
-ほっと落ち着ける時間を届けたい。
-
-そんな思いから生まれたコーヒーと旅のブランドです。
-    </p>
-  </section>
-
-  <!-- お知らせ -->
-  <section id="news">
-    <h2>お知らせ</h2>
-    <p>
-2025年5月1日：オンラインストアを公開しました！  
-2025年5月3日：初回発送は5月10日を予定しています。  
-新商品の情報はInstagramでも随時発信します！
+      コーヒーが好きで、旅行も好き。
+      DYOWBYは、そんな自分自身を表現する場所です。
+      
+      慌ただしい人生の中で、5分でも10分でも
+      ほっと落ち着ける時間を届けたい。
+      
+      そんな思いから生まれたコーヒーと旅のブランドです。
     </p>
   </section>
 
@@ -199,11 +158,37 @@ DYOWBYは、そんな自分自身を表現する場所です。
   <section id="company">
     <h2>会社概要</h2>
     <p>
-1. DYOWBY COFFEE　代表：森岡尚暉  
-2. 東京都足立区新田2丁目  
-3. dyowby.coffee@gmail.com  
-4. 自家焙煎コーヒー豆のネット販売とコーヒー豆の定期便
+      1. DYOWBY COFFEE　代表：森岡尚暉<br>
+      2. 東京都足立区新田2丁目<br>
+      3. dyowby.coffee@gmail.com<br>
+      4. 自家焙煎コーヒー豆のネット販売とコーヒー豆の定期便
     </p>
+  </section>
+
+  <!-- お知らせ -->
+  <section id="news">
+    <h2>お知らせ</h2>
+    <p>
+      新しいコーヒー豆が入荷しました！ぜひチェックしてみてください。
+    </p>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>何か質問があれば、お気軽にご連絡ください！</p>
+    <form action="mailto:dyowby.coffee@gmail.com" method="post" enctype="text/plain">
+      <label for="name">名前:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">メールアドレス:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="message">メッセージ:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      
+      <input type="submit" value="送信">
+    </form>
   </section>
 
   <footer style="text-align: center; padding: 20px; color: #fff; background-color: rgba(0, 0, 0, 0.6);">
