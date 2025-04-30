@@ -20,17 +20,17 @@
     }
 
     nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px 0;
       position: sticky;
       top: 0;
-      z-index: 999;
+      z-index: 10;
     }
 
     nav a {
       color: #fff;
-      margin: 0 1em;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
@@ -143,22 +143,26 @@
         width: 80%;
         padding: 12px;
       }
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- ナビゲーション -->
+  <nav>
+    <a href="#about">DYOWBYとは</a>
+    <a href="#news">お知らせ</a>
+    <a href="#company">会社概要</a>
+  </nav>
+
   <!-- 絵文字アニメーション -->
   <div class="emoji coffee">☕</div>
   <div class="emoji bean">🌱</div>
   <div class="emoji plane">✈️</div>
-
-  <!-- ナビゲーション（目次） -->
-  <nav>
-    <a href="#about">DYOWBYとは</a>
-    <a href="#company">会社概要</a>
-    <a href="#contact">お問い合わせ</a>
-  </nav>
 
   <!-- メイン -->
   <div class="container">
@@ -181,22 +185,25 @@ DYOWBYは、そんな自分自身を表現する場所です。
     </p>
   </section>
 
+  <!-- お知らせ -->
+  <section id="news">
+    <h2>お知らせ</h2>
+    <p>
+2025年5月1日：オンラインストアを公開しました！  
+2025年5月3日：初回発送は5月10日を予定しています。  
+新商品の情報はInstagramでも随時発信します！
+    </p>
+  </section>
+
   <!-- 会社概要 -->
   <section id="company">
     <h2>会社概要</h2>
     <p>
-1. DYOWBY COFFEE　代表：森岡尚暉
-2. 東京都足立区新田2丁目
-3. dyowby.coffee@gmail.com
+1. DYOWBY COFFEE　代表：森岡尚暉  
+2. 東京都足立区新田2丁目  
+3. dyowby.coffee@gmail.com  
 4. 自家焙煎コーヒー豆のネット販売とコーヒー豆の定期便
     </p>
-  </section>
-
-  <!-- お問い合わせ -->
-  <section id="contact">
-    <h2>お問い合わせ</h2>
-    <p>ご質問・ご相談はメールで承っています。</p>
-    <p><a href="mailto:dyowby.coffee@gmail.com" style="color: #fff; text-decoration: underline;">dyowby.coffee@gmail.com</a></p>
   </section>
 
   <footer style="text-align: center; padding: 20px; color: #fff; background-color: rgba(0, 0, 0, 0.6);">
