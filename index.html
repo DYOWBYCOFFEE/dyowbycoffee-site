@@ -1,29 +1,200 @@
-DYOWBY COFFEE
-DYOWBYとは
-会社概要
-お知らせ
-DYOWBY COFFEE
-旅するように、 コーヒーを飲もう。
-Decide Your Own Way By Yourself
-単品で購入する
-DYOWBYとは
-コーヒーが好きで、旅行も好き。DYOWBYは、そんな自分自身を表現する場所です。
-慌ただしい人生の中で、5分でも10分でもほっと落ち着ける時間を届けたい。そんな思いから生まれたコーヒーと旅のブランドです。
-お知らせ
-2026年3月〜
-春の訪れとともに、🌸 SAKURA BLEND がスタートします。季節の一杯を、ぜひ楽しんでください。
-会社概要
-屋号
-DYOWBY COFFEE
-代表
-森岡尚暉
-所在地
-東京都足立区新田2丁目
-連絡先
-dyowby.coffee@gmail.com
-事業内容
-自家焙煎コーヒー豆のネット販売
-今しか出会えない一杯を、見つけに行こう。
-dyowby.coffee@gmail.com
-DYOWBY COFFEE ショップへ
-© DYOWBY COFFEE　Instagram
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DYOWBY COFFEE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3EEE3;
+    --bg-warm:#EAE0CE;
+    --ink:#2B211A;
+    --ink-soft:#5A4B3D;
+    --amber:#B8722E;
+    --amber-deep:#8C5322;
+    --cream:#FFFDF7;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:inherit;margin:0;padding:0;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%;}
+  body{
+    height:100%;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Zen Kaku Gothic New",sans-serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  .wrap{max-width:640px;margin:0 auto;padding:0 28px;}
+
+  nav{
+    padding:20px 28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:13px;
+    border-bottom:1px solid rgba(43,33,26,0.12);
+  }
+  nav .brand{font-weight:700;letter-spacing:0.06em;}
+  nav .links{display:flex;gap:18px;}
+  nav .links a{text-decoration:none;color:var(--ink-soft);}
+
+  /* Hero */
+  .hero{padding:80px 0 60px;border-bottom:1px solid rgba(43,33,26,0.12);}
+  .hero .mark{font-size:13px;letter-spacing:0.14em;color:var(--amber-deep);margin-bottom:24px;}
+  .hero h1{
+    font-family:"Shippori Mincho",serif;
+    font-weight:700;
+    font-size:clamp(30px,7vw,44px);
+    line-height:1.65;
+  }
+  .hero .en{margin-top:20px;font-size:14px;color:var(--ink-soft);letter-spacing:0.04em;}
+
+  .cta-row{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px;}
+  .cta{
+    display:inline-block;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:2px;
+    font-size:14px;
+    letter-spacing:0.03em;
+    transition:background .2s ease, color .2s ease;
+  }
+  .cta.solid{background:var(--ink);color:var(--cream);}
+  .cta.solid:hover{background:var(--amber-deep);}
+  .cta:focus-visible{outline:2px solid var(--amber);outline-offset:3px;}
+
+  /* About */
+  .about{padding:64px 0;}
+  .about .label{font-size:13px;color:var(--amber-deep);margin-bottom:20px;}
+  .about p{font-size:16.5px;margin-bottom:20px;}
+  .about p:last-child{margin-bottom:0;}
+
+  /* News */
+  .news{
+    padding:64px 0;
+    background:var(--bg-warm);
+    border-top:1px solid rgba(43,33,26,0.12);
+    border-bottom:1px solid rgba(43,33,26,0.12);
+  }
+  .news h2{font-family:"Shippori Mincho",serif;font-size:22px;margin-bottom:28px;}
+  .news .entry{padding:18px 0;border-bottom:1px solid rgba(43,33,26,0.14);}
+  .news .entry:last-child{border-bottom:none;}
+  .news .date{font-size:13px;color:var(--amber-deep);margin-bottom:8px;}
+  .news .text{font-size:15px;}
+
+  /* Company */
+  .company{padding:64px 0;}
+  .company h2{font-family:"Shippori Mincho",serif;font-size:22px;margin-bottom:28px;}
+  .company dl{display:grid;grid-template-columns:96px 1fr;row-gap:14px;font-size:15px;}
+  .company dt{color:var(--ink-soft);}
+  .company dd a{text-decoration:underline;text-decoration-color:rgba(184,114,46,0.4);}
+
+  /* Contact / closing */
+  .closing{padding:72px 0 96px;text-align:center;}
+  .closing p{font-size:16px;margin-bottom:32px;}
+  .closing .mail{
+    display:inline-block;
+    font-size:15px;
+    text-decoration:underline;
+    text-decoration-color:rgba(184,114,46,0.5);
+    margin-bottom:44px;
+  }
+  .closing .cta{background:var(--amber);color:var(--cream);}
+  .closing .cta:hover{background:var(--amber-deep);}
+
+  footer{
+    padding:28px;
+    text-align:center;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  footer a{text-decoration:underline;}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1C1712; --bg-warm:#241D16; --ink:#EFE6D8; --ink-soft:#B9AC98;
+      --cream:#1C1712; --amber:#D89654; --amber-deep:#E7A968;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1C1712; --bg-warm:#241D16; --ink:#EFE6D8; --ink-soft:#B9AC98;
+    --cream:#1C1712; --amber:#D89654; --amber-deep:#E7A968;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">DYOWBY COFFEE</div>
+  <div class="links">
+    <a href="#about">DYOWBYとは</a>
+    <a href="#company">会社概要</a>
+    <a href="#news">お知らせ</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="mark">DYOWBY COFFEE</div>
+    <h1>旅するように、<br>コーヒーを飲もう。</h1>
+    <div class="en">Decide Your Own Way By Yourself</div>
+    <div class="cta-row">
+      <a class="cta solid" href="https://dyowbycoffee.theshop.jp/" target="_blank" rel="noopener">単品で購入する</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="label">DYOWBYとは</div>
+    <p>コーヒーが好きで、旅行も好き。DYOWBYは、そんな自分自身を表現する場所です。</p>
+    <p>慌ただしい人生の中で、5分でも10分でもほっと落ち着ける時間を届けたい。そんな思いから生まれたコーヒーと旅のブランドです。</p>
+  </div>
+</section>
+
+<section class="news" id="news">
+  <div class="wrap">
+    <h2>お知らせ</h2>
+    <div class="entry">
+      <div class="date">2026年3月〜</div>
+      <div class="text">春の訪れとともに、🌸 SAKURA BLEND がスタートします。季節の一杯を、ぜひ楽しんでください。</div>
+    </div>
+  </div>
+</section>
+
+<section class="company" id="company">
+  <div class="wrap">
+    <h2>会社概要</h2>
+    <dl>
+      <dt>屋号</dt><dd>DYOWBY COFFEE</dd>
+      <dt>代表</dt><dd>森岡尚暉</dd>
+      <dt>所在地</dt><dd>東京都足立区新田2丁目</dd>
+      <dt>連絡先</dt><dd><a href="mailto:dyowby.coffee@gmail.com">dyowby.coffee@gmail.com</a></dd>
+      <dt>事業内容</dt><dd>自家焙煎コーヒー豆のネット販売</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <p>今しか出会えない一杯を、見つけに行こう。</p>
+    <a class="mail" href="mailto:dyowby.coffee@gmail.com">dyowby.coffee@gmail.com</a><br>
+    <a class="cta" href="https://dyowbycoffee.theshop.jp/" target="_blank" rel="noopener">DYOWBY COFFEE ショップへ</a>
+  </div>
+</section>
+
+<footer>
+  © DYOWBY COFFEE　<a href="https://www.instagram.com/dyowby.coffee" target="_blank" rel="noopener">Instagram</a>
+</footer>
+
+</body>
+</html>
