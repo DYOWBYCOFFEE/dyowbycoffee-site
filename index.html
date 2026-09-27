@@ -1,243 +1,29 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DYOWBY COFFEE</title>
-<meta name="description" content="DYOWBY COFFEE - 自家焙煎コーヒー豆の販売・定期便。旅するようにコーヒーを楽しもう。">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #fff;
-      position: relative;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px 0;
-    }
-
-    .nav-links a {
-      margin: 0 20px;
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 15px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-      white-space: nowrap;
-    }
-
-    .nav-links a:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .container {
-      text-align: center;
-      padding: 100px 20px 40px;
-      position: relative;
-      z-index: 1;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 30px;
-      background-color: rgba(255, 255, 255, 0.8);
-      color: #333;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: transform 0.3s ease;
-    }
-
-    .button:hover {
-      transform: scale(1.05);
-    }
-
-    section {
-      background-color: rgba(0, 0, 0, 0.6);
-      margin: 30px auto;
-      padding: 30px;
-      max-width: 800px;
-      border-radius: 10px;
-      z-index: 1;
-      position: relative;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      white-space: pre-line;
-    }
-
-    .emoji {
-      position: absolute;
-      font-size: 2rem;
-      opacity: 0.3;
-      z-index: 0;
-      animation-duration: 6s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      pointer-events: none;
-    }
-
-    .coffee {
-      top: 20%;
-      left: 10%;
-      animation-name: float1;
-    }
-
-    .bean {
-      top: 60%;
-      left: 80%;
-      animation-name: float2;
-    }
-
-    .plane {
-      top: 40%;
-      left: 50%;
-      animation-name: float3;
-    }
-
-    @keyframes float1 {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0); }
-    }
-
-    @keyframes float2 {
-      0% { transform: translateX(0); }
-      50% { transform: translateX(15px); }
-      100% { transform: translateX(0); }
-    }
-
-    @keyframes float3 {
-      0% { transform: translateY(0) translateX(0); }
-      50% { transform: translateY(-8px) translateX(8px); }
-      100% { transform: translateY(0) translateX(0); }
-    }
-
-    @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .button {
-        width: 80%;
-        padding: 12px;
-      }
-      .nav-links {
-        flex-direction: column;
-      }
-      .nav-links a {
-        margin: 5px 0;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- 絵文字アニメーション -->
-  <div class="emoji coffee">☕</div>
-  <div class="emoji bean">🌱</div>
-  <div class="emoji plane">✈️</div>
-
-  <!-- アンカーリンク -->
-  <nav class="nav-links">
-    <a href="#about">DYOWBYとは</a>
-    <a href="#company">会社概要</a>
-    <a href="#news">お知らせ</a>
-    <a href="#contact">お問い合わせ</a>
-  </nav>
-
-  <!-- メイン -->
-  <div class="container">
-    <h1>DYOWBY</h1>
-    <a class="button" href="https://dyowbycoffee.theshop.jp">単品で購入する</a>
-    <a class="button" href="https://20mi7i-em.myshopify.com/products/世界を旅するコーヒー定期便-brewby">定額プランをみる</a>
-  </div>
-
-  <!-- DYOWBYとは -->
-  <section id="about">
-    <h2>DYOWBYとは</h2>
-    <p>
-コーヒーが好きで、旅行も好き。
-DYOWBYは、そんな自分自身を表現する場所です。
-
-慌ただしい人生の中で、5分でも10分でも
-ほっと落ち着ける時間を届けたい。
-
-そんな思いから生まれたコーヒーと旅のブランドです。
-    </p>
-  </section>
-
-  <!-- 会社概要 -->
-  <section id="company">
-    <h2>会社概要</h2>
-    <p>
-1. DYOWBY COFFEE　代表：森岡尚暉  
-2. 東京都足立区新田2丁目  
-3. dyowby.coffee@gmail.com  
-4. 自家焙煎コーヒー豆のネット販売とコーヒー豆の定期便
-    </p>
-  </section>
-
-  <!-- お知らせ -->
-  <section id="news">
-    <h2>お知らせ</h2>
-    <p>
-春の訪れとともに、
-2026年3月より 🌸 SAKURA BLEND がスタートします。
-
-そして4月からは、
-BREWBYにて 🇭🇳 ホンジュラス をセレクト。
-DYOWBYらしい解釈で仕上げた一杯をお届けします。
-
-季節も、産地も、コーヒーの楽しみ方も。
-今年もDYOWBYと一緒に味わってください。
-    </p>
-  </section>
-
-  <!-- お問い合わせ -->
-  <section id="contact">
-    <h2>お問い合わせ</h2>
-    <p>メールでのお問い合わせはこちらまでどうぞ：</p>
-    <p>
-      <a href="mailto:dyowby.coffee@gmail.com" style="color: #fff; text-decoration: underline;">
-        dyowby.coffee@gmail.com
-      </a>
-    </p>
-  </section>
-
-  <!-- フッター -->
-  <footer style="text-align: center; padding: 20px; color: #fff; background-color: rgba(0, 0, 0, 0.6);">
-    <p>Follow us on  
-      <a href="https://www.instagram.com/dyowby.coffee" target="_blank" style="color: #fff; text-decoration: underline;">
-        Instagram
-      </a>
-    </p>
-  </footer>
-
-</body>
-</html>
+DYOWBY COFFEE
+DYOWBYとは
+会社概要
+お知らせ
+DYOWBY COFFEE
+旅するように、 コーヒーを飲もう。
+Decide Your Own Way By Yourself
+単品で購入する
+DYOWBYとは
+コーヒーが好きで、旅行も好き。DYOWBYは、そんな自分自身を表現する場所です。
+慌ただしい人生の中で、5分でも10分でもほっと落ち着ける時間を届けたい。そんな思いから生まれたコーヒーと旅のブランドです。
+お知らせ
+2026年3月〜
+春の訪れとともに、🌸 SAKURA BLEND がスタートします。季節の一杯を、ぜひ楽しんでください。
+会社概要
+屋号
+DYOWBY COFFEE
+代表
+森岡尚暉
+所在地
+東京都足立区新田2丁目
+連絡先
+dyowby.coffee@gmail.com
+事業内容
+自家焙煎コーヒー豆のネット販売
+今しか出会えない一杯を、見つけに行こう。
+dyowby.coffee@gmail.com
+DYOWBY COFFEE ショップへ
+© DYOWBY COFFEE　Instagram
